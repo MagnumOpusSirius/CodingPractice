@@ -1,5 +1,6 @@
 package com.demo.streamAPI;
 
+import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.*;
 
@@ -116,8 +117,41 @@ public class Set1 {
                 .count() != arr.length;
         System.out.println(bool);
     }
+    /*
+    Question 12:
+    Get the current date and time
+     */
+    public static void getDateAndTime(){
+        System.out.println("Current local date: "+ java.time.LocalDate.now());
+        System.out.println("Current local time: "+ java.time.LocalTime.now());
+    }
+    /*
+    Question 13:
+    Concat two streams
+     */
+    public static void concatenateStream(){
+        List<String> list1= Arrays.asList("hello","world");
+        List<String> list2= Arrays.asList("How", "are", "you");
+
+        Stream<String> concatStream= Stream.concat(list1.stream(), list2.stream());
+        String result = concatStream.collect(Collectors.joining(" "));
+        System.out.println(result);
+    }
+    /*
+    Question 14:
+    perform cube on list elements and filter numbers greater than 50
+     */
+    public static void findCubeAndFilterList(List<Integer> list){
+        List<Integer> result= list.stream()
+                .map(x->x*x*x)
+                .filter(x->x>50)
+                .collect(Collectors.toList());
+        System.out.println(result);
+    }
+
+
     public static void main(String[] args) {
-        List<Integer> myList= Arrays.asList(1,2,33,4,4,6,8,11,11,23);
+        List<Integer> myList= Arrays.asList(1,2,33,4,4,6,8,3,11,23);
         evenNumber(myList);
         startingWith(myList);
         duplicateElements(myList);
@@ -125,6 +159,7 @@ public class Set1 {
         findTotalElementPresent(myList);
         findMax(myList);
         sortList(myList);
+        findCubeAndFilterList(myList);
 
         int[] arr= {1,2,3,4,5,5};
         containsDuplicates(arr);
@@ -132,5 +167,8 @@ public class Set1 {
         String str= "abnbccdd";
         findFirstNonRepeatedCharacter(str);
         findFirstRepeatedCharacter(str);
+
+        getDateAndTime();
+        concatenateStream();
     }
 }
