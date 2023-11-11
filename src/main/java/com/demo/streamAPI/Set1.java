@@ -159,6 +159,27 @@ public class Set1 {
                 .collect(Collectors.toList());
         System.out.println(result);
     }
+    /*
+    Question 16:
+    Use Map to convert object into Uppercase
+     */
+    public static void convertToUpperCase(String str){
+        String result= str.chars()
+                .map(c->Character.toUpperCase(c))
+                .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
+                .toString();
+        System.out.println("UpperCase: "+ result);
+    }
+    /*
+    Question 18:
+    Count each element/word from string ArrayList
+     */
+    public static void countWordFrequency(){
+        List<String> words= Arrays.asList("AA", "BB", "CC", "AA", "maria", "Maria");
+        Map<String, Long> store= words.stream()
+                .collect(Collectors.groupingBy(word->word.toLowerCase(), Collectors.counting()));
+        System.out.println("Map(word, count): "+store);
+    }
 
     public static void main(String[] args) {
         List<Integer> myList= Arrays.asList(1,2,33,4,4,6,8,3,11,23);
@@ -178,8 +199,10 @@ public class Set1 {
         String str= "abnbccdd";
         findFirstNonRepeatedCharacter(str);
         findFirstRepeatedCharacter(str);
+        convertToUpperCase(str);
 
         getDateAndTime();
         concatenateStream();
+        countWordFrequency();
     }
 }
