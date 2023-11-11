@@ -1,4 +1,4 @@
-package com.demo;
+package com.demo.practice;
 
 public class StringProblem {
     static void reverseString(String str){
