@@ -148,7 +148,17 @@ public class Set1 {
                 .collect(Collectors.toList());
         System.out.println(result);
     }
-
+    /*
+    Question 15:
+    sort an array and then convert the sorted array in stream
+     */
+    public static void sortAndConvertToStream(int[] arr){
+        Arrays.sort(arr);
+        List<Integer> result= Arrays.stream(arr)
+                .boxed()//convert to int stream
+                .collect(Collectors.toList());
+        System.out.println(result);
+    }
 
     public static void main(String[] args) {
         List<Integer> myList= Arrays.asList(1,2,33,4,4,6,8,3,11,23);
@@ -163,6 +173,7 @@ public class Set1 {
 
         int[] arr= {1,2,3,4,5,5};
         containsDuplicates(arr);
+        sortAndConvertToStream(arr);
 
         String str= "abnbccdd";
         findFirstNonRepeatedCharacter(str);
