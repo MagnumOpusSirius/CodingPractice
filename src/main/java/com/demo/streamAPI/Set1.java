@@ -66,12 +66,55 @@ public class Set1 {
         System.out.println(result);
     }
     /*
-    Question 4: given list of integers, find the max element
+    Question 6: given list of integers, find the max element
      */
     public static void findMax(List<Integer> myList){
         Integer result = myList.stream()
                 .max((x,y)->x.compareTo(y)).get();
         System.out.println(result);
+    }
+    /*
+    Question 7: given string, find first non-repeated character
+     */
+    public static void findFirstNonRepeatedCharacter(String str){
+        Optional<Character> result = str.chars()//stream of strings
+                .mapToObj(x-> (char)x)
+                .distinct()
+                .filter(ch->str.chars().filter(c-> c == ch).count() ==1)
+                .findFirst();
+        result.ifPresent(x-> System.out.println(x));
+    }
+    /*
+    Question 8: given String, find first repeated character in stream
+     */
+    public static void findFirstRepeatedCharacter(String str){
+        Optional<Character> result = str.chars()
+                .mapToObj(c-> (char)c)
+                .filter(ch->str.chars().filter(c->c==ch).count()>1)
+                .findFirst();
+        result.ifPresentOrElse(x-> System.out.println(x), ()-> System.out.println("not present"));
+    }
+    /*
+    Question 9: given list of int, sort all values present
+     */
+    public static void sortList(List<Integer> list){
+        List<Integer> result= list.stream()
+                .sorted((x,y)-> x.compareTo(y))
+                .collect(Collectors.toList());
+        System.out.println(result);
+    }
+    /*
+    Question 11:
+    given integer array,
+    return true if any value appears atleast twice (x>=2)
+    and return false if every element is distinct
+     */
+    public static void containsDuplicates(int[] arr){
+        //convert array to stream and
+        boolean bool= Arrays.stream(arr)
+                .distinct()
+                .count() != arr.length;
+        System.out.println(bool);
     }
     public static void main(String[] args) {
         List<Integer> myList= Arrays.asList(1,2,33,4,4,6,8,11,11,23);
@@ -81,5 +124,13 @@ public class Set1 {
         findFirstElement(myList);
         findTotalElementPresent(myList);
         findMax(myList);
+        sortList(myList);
+
+        int[] arr= {1,2,3,4,5,5};
+        containsDuplicates(arr);
+
+        String str= "abnbccdd";
+        findFirstNonRepeatedCharacter(str);
+        findFirstRepeatedCharacter(str);
     }
 }
