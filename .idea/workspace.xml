@@ -5,31 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13ca5b20-5e43-4570-9c5b-d8cb78874a8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/ArrayProblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/HackerRank/BinaryNumberLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/HackerRank/DataAnalyst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/HackerRank/GetSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/HackerRank/LogProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/HackerRank/SinglyLinkedListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/HackerRank/SortBinaryMinMoves.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/ListProblems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/MaximalSumSubset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/StringProblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/cogent/ConstructorQuestionSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/cogent/RemoveDuplicates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/leetcode/Leetcode215.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/leetcode/Leetcode217.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/leetcode/Leetcode242.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/leetcode/Leetcode49.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/practice/MyThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/testBinary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/tiktok/PrefixScores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/streamAPI/Question1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
