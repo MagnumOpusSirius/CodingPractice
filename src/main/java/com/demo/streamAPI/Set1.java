@@ -180,6 +180,51 @@ public class Set1 {
                 .collect(Collectors.groupingBy(word->word.toLowerCase(), Collectors.counting()));
         System.out.println("Map(word, count): "+store);
     }
+    /*
+    Question 18:
+    Count each element from ArrayList
+     */
+    public static void countElementFrequency(){
+        List<Integer> elem= Arrays.asList(1,2,3,4,5,3,2,3);
+        Map<Integer, Long> newMap= elem.stream()
+                .collect(Collectors.groupingBy(e-> e, Collectors.counting()));
+        System.out.println(newMap);
+    }
+    /*
+    Question 19:
+    Find only duplicate elements with its count from ArrayList
+     */
+    public static void countOnlyDuplicateElements(){
+        List<Integer> elem= Arrays.asList(1,2,3,4,5,3,2,3);
+        Map<Integer, Long> newMap= elem.stream()
+                        .filter(x->Collections.frequency(elem, x)>1)
+                .collect(Collectors.groupingBy(e->e, Collectors.counting()));
+        System.out.println(newMap);
+    }
+    /*
+    Question 21:
+    Write a Program to find the Maximum element in an array?
+     */
+    public static void findMaxElement(){
+        List<Integer> elem= Arrays.asList(1,2,3,4,5,3,2,3);
+        Integer result = elem.stream()
+                .max((x,y)->x.compareTo(y))
+                .get();
+        System.out.println(result);
+    }
+    /*
+    Question 21:
+    Write a program to print count of each character in a string?
+     */
+    public static void countEachCharacter(){
+        String str= "Hello, how are you?";
+        Map<String, Long> map= Arrays.stream(str.split(""))
+                .filter(s->!s.trim().isEmpty())
+                .map(String::toLowerCase)
+                .collect(Collectors.groupingBy(c->c, Collectors.counting()));
+        System.out.println(map);
+    }
+
 
     public static void main(String[] args) {
         List<Integer> myList= Arrays.asList(1,2,33,4,4,6,8,3,11,23);
@@ -204,5 +249,9 @@ public class Set1 {
         getDateAndTime();
         concatenateStream();
         countWordFrequency();
+        countElementFrequency();
+        countOnlyDuplicateElements();
+        findMaxElement();
+        countEachCharacter();
     }
 }
