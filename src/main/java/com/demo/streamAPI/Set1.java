@@ -164,11 +164,13 @@ public class Set1 {
     Use Map to convert object into Uppercase
      */
     public static void convertToUpperCase(String str){
+
         String result= str.chars()
                 .map(c->Character.toUpperCase(c))
                 .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
                 .toString();
         System.out.println("UpperCase: "+ result);
+
     }
     /*
     Question 18:
@@ -227,31 +229,36 @@ public class Set1 {
 
 
     public static void main(String[] args) {
-        List<Integer> myList= Arrays.asList(1,2,33,4,4,6,8,3,11,23);
-        evenNumber(myList);
-        startingWith(myList);
-        duplicateElements(myList);
-        findFirstElement(myList);
-        findTotalElementPresent(myList);
-        findMax(myList);
-        sortList(myList);
-        findCubeAndFilterList(myList);
+//        List<Integer> myList= Arrays.asList(1,2,33,4,4,6,8,3,11,23);
+//        evenNumber(myList);
+//        startingWith(myList);
+//        duplicateElements(myList);
+//        findFirstElement(myList);
+//        findTotalElementPresent(myList);
+//        findMax(myList);
+//        sortList(myList);
+//        findCubeAndFilterList(myList);
+//
+//        int[] arr= {1,2,3,4,5,5};
+//        containsDuplicates(arr);
+//        sortAndConvertToStream(arr);
+//
+//        String str= "abnbccdd";
+//        findFirstNonRepeatedCharacter(str);
+//        findFirstRepeatedCharacter(str);
+//        convertToUpperCase(str);
+//
+//        getDateAndTime();
+//        concatenateStream();
+//        countWordFrequency();
+//        countElementFrequency();
+//        countOnlyDuplicateElements();
+//        findMaxElement();
+//        countEachCharacter();
 
-        int[] arr= {1,2,3,4,5,5};
-        containsDuplicates(arr);
-        sortAndConvertToStream(arr);
-
-        String str= "abnbccdd";
-        findFirstNonRepeatedCharacter(str);
-        findFirstRepeatedCharacter(str);
-        convertToUpperCase(str);
-
-        getDateAndTime();
-        concatenateStream();
-        countWordFrequency();
-        countElementFrequency();
-        countOnlyDuplicateElements();
-        findMaxElement();
-        countEachCharacter();
+        var my1 = 5;
+        var my2= "hello";
+        var res= my1+my2;
+        System.out.println(res);
     }
 }

@@ -1,6 +1,7 @@
 package com.demo.streamAPI;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -75,7 +76,43 @@ public class Set2 {
         Set<Integer> set= new HashSet<>();
         System.out.println(arr1.stream().filter(x->!set.add(x)).sorted().collect(Collectors.toList()));
     }
+
+    //given a list of number n and value k, return the max average in list of numbers for range k:
+    //sort in descending order
+    //limit the search till k
+    //convert mapToInt() and find the avg and getAsDouble.
+    public static void operation8(){
+        List<Integer> arr1= Arrays.asList(1,2,3,4,5,6);
+        int k =4;
+        System.out.println(arr1.stream()
+                .sorted((a,b)->b-a)
+                .limit(k)
+                .mapToInt(Integer::intValue)
+                .average()
+                .getAsDouble());
+    }
+    //have a list of string and want to find the distinct
+    public static void operation9(){
+        List<String> arr= Arrays.asList("hi","ho","he","hi","he");
+
+        System.out.println(arr.stream()
+                .distinct()
+                .collect(Collectors.toList()));
+    }
+
+    //find the freq of each character in a given string:
+    public static void operation10(){
+        String str= "hello";
+        System.out.println(Arrays.stream(str.split(""))
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting())));
+
+    }
+
+    //assume you have list of emp in various dept, find highest paid emp from each department:
+
+
+
     public static void main(String[] args) {
-        operation7();
+        operation10();
     }
 }

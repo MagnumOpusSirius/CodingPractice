@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13ca5b20-5e43-4570-9c5b-d8cb78874a8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/Java2blog/Set1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/cogent/IndirectFlightFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/graphs/GraphAlgo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/streamAPI/EvenOddPrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/cogent/ConstructorQuestionSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/streamAPI/Set1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/streamAPI/Set1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/streamAPI/Set2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/streamAPI/Set2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,13 +39,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.demo.HackerRank" />
