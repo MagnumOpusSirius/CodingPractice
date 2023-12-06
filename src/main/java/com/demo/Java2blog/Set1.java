@@ -1,6 +1,7 @@
 package com.demo.Java2blog;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
@@ -38,7 +39,6 @@ public class Set1 {
         for(int i=0; i<t.length(); i++){
             newMap.put(t.charAt(i), newMap.getOrDefault(t.charAt(i),0)-1);
         }
-
         for(int value: newMap.values()){
             if(value!=0){
                 return false;
@@ -46,15 +46,49 @@ public class Set1 {
         }
         return true;
     }
+
+    // check if a string has all unique character:
+    public boolean uniqueChar(String str){
+        Set<Character> mySet= new HashSet<>();
+
+        for(int i=0; i<str.length(); i++){
+            mySet.add(str.charAt(i));
+        }
+        if(mySet.size()!=str.length()){
+            return false;
+        }
+        return true;
+    }
+
+    //check if one string is rotation of another string:
+    public boolean rotationCheck(String s, String t){
+        if(s.length()!= t.length()){
+            return false;
+        }
+        String result= s+s;
+        if(result.contains(t)){
+            return true;
+        }
+        return false;
+    }
+
+    //check if one string is present in another string:
+    public boolean ifStringPresentCheck()
+
     public static void main(String[] args) {
         Set1 s= new Set1();
-
+        //=========
         String str= "Hello World";
         System.out.println(s.reverseString(str));
         System.out.println(s.reverseStringUsingBuilder(str));
-
+        //=========
         String s1 = "cat";
-        String t1= "act";
+        String t1= "cat";
         System.out.println(s.anagram(s1,t1));
+        //=========
+        System.out.println("Unique Char: "+ s.uniqueChar(s1));
+        System.out.println("Rotation of String Check: "+ s.rotationCheck(s1,t1));
+
+
     }
 }
