@@ -106,10 +106,30 @@ public class Set1 {
 
     }
 
+    //find all substrings of String:
+    //example: "abb" -> a,b,b,ab,bb,abb
+    public static void findSubstring(String str){
+        for(int i =0; i< str.length(); i++){
+            for(int j=i+1; j<=str.length();j++){
+                System.out.println(str.substring(i,j));
+            }
+        }
+    }
+
+    //find the length of the string without using prebuilt function:
+    public static void findLength(String str){
+        int length=0;
+        char[] arr= str.toCharArray();
+        for(char c: arr){
+            length++;
+        }
+        System.out.println(length);
+    }
+
     public static void main(String[] args) {
 //        Set1 s= new Set1();
 //        //=========
-        String str= "annalogy hey";
+        String str= "abc";
 //        System.out.println(s.reverseString(str));
 //        System.out.println(s.reverseStringUsingBuilder(str));
 //        //=========
@@ -121,7 +141,8 @@ public class Set1 {
 //        System.out.println("Rotation of String Check: "+ s.rotationCheck(s1,t1));
 //        //=========
 //        findDuplicateChar(str);
-        nonRepeatedCharacter(str);
+//        nonRepeatedCharacter(str);
+        findSubstring(str);
 
     }
 }
