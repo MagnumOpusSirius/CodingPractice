@@ -128,8 +128,106 @@ public class Set2 {
         }
         System.out.println(length);
     }
+    //------------------------------------------------------
+    //remove duplicate elements from array:
+    public static void removeDuplicate(int[] arr){
+        Set<Integer> set= new LinkedHashSet<>();
+
+        for(int i=0; i<arr.length; i++){
+            set.add(arr[i]);
+        }
+        Integer[] newArr= new Integer[set.size()];
+        set.toArray(newArr);
+        System.out.println(Arrays.toString(newArr));
+
+    }
+
+    public static void getFibonacci(int n){
+        int i=0;
+        int a=0, b=1;
+        while(i<n){
+            System.out.print(a+" ");
+
+            int temp=a+b;
+            a=b;
+            b=temp;
+            i++;
+        }
+    }
+
+    static int findClosestToZero(int[] arr){
+        int result= Integer.MAX_VALUE;
+
+        for(int num: arr){
+            if(Math.abs(num)<Math.abs(result) || num==Math.abs(result)){
+                result=num;
+            }
+        }
+        return result;
+    }
+    //find K closest elements to X in the array:
+    //arr={1,2,3,4,5}, k=3, x=2
+    static List<Integer> findKClosestElements(int[] arr, int k, int x){
+        int start= 0;
+        int end=arr.length-1;
+
+        while(end-start>=k){
+            if(Math.abs(arr[start]-x)>Math.abs(arr[end]-x)){
+                start++;
+            }
+            else{
+                end--;
+            }
+        }
+
+        List<Integer> list= new ArrayList<>();
+        for(int i=start; i<=end;i++){
+            list.add(arr[i]);
+        }
+        return list;
+    }
+
+    //check for prime number:
+    static boolean primeCheck(int num){
+        if(num==0 || num==1){
+            return false;
+        }
+        if(num==2){
+            return true;
+        }
+        for(int i=2; i<=num/2; i++){
+            if(num%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    static boolean checkPalindrome(String str){
+        for(int i=0; i< str.length()/2; i++){
+            if(str.charAt(i) != str.charAt(str.length()-i-1)){
+                return false;
+            }
+        }
+        return true;
+    }
+
 
     public static void main(String[] args) {
+        int[] arr ={10,5,8,20,15};
 
+        int max=  Integer.MIN_VALUE;
+        int secMax=  Integer.MIN_VALUE;
+
+        for(int num: arr){
+            if(num>max){
+                secMax=max;
+                max=num;
+            }
+            else if(num>secMax){
+                secMax=num;
+            }
+        }
+        System.out.println(secMax);
     }
 }
