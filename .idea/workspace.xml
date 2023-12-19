@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13ca5b20-5e43-4570-9c5b-d8cb78874a8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/Java2blog/AbstractClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/practice/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/practice/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/practice/Singleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/practice/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/Java2blog/Set2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/Java2blog/Set2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/Java2blog/Set3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/Java2blog/Set3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/practice/Sort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
