@@ -1,5 +1,8 @@
 package com.demo.practice;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -64,6 +67,29 @@ public class Main {
         return checkNumber2(n/2);
     }
 
+    //find the sublist that adds up to the target:
+    //sliding window strategy:
+    public static List<Integer> findSublist(List<Integer> list,int target){
+        List<Integer> sublist= new ArrayList<>();
+        int currSum=0;
+        int start=0;
+
+        for(int i=0;i<list.size(); i++){
+            currSum+=list.get(i);
+            while(currSum>target && start<=i){
+                currSum-=list.get(start);
+                start++;
+            }
+            //otherwise found the sublist:
+            if(currSum==target){
+                sublist.addAll(list.subList(start,i+1));
+                return sublist;
+            }
+        }
+        //else no sublist found:
+        return sublist;
+    }
+
 
 
     public static void main(String[] args) {
@@ -89,9 +115,13 @@ public class Main {
 //        System.out.println(checkNumber(n2));
 
         //-----------------Exercise 5-----------------
-        System.out.print("Enter the number: ");
-        int n3 = sc.nextInt();
-        System.out.println(checkNumber2(n3));
-        //how to use lambda expression in stream?
+//        System.out.print("Enter the number: ");
+//        int n3 = sc.nextInt();
+//        System.out.println(checkNumber2(n3));
+
+        //-------------Exercise 6--------------
+        List<Integer> list= Arrays.asList(1,4,20,3,10,5);
+        int target= 15;
+        System.out.println(findSublist(list,target));
     }
 }
