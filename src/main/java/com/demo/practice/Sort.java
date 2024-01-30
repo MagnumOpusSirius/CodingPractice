@@ -23,7 +23,6 @@ public class Sort {
         int[] right= mergeSort(Arrays.copyOfRange(arr, mid, arr.length));
         return merge(left, right);
     }
-
     static int[] merge(int[] first, int[] second){
         int[] mixed= new int[first.length+second.length];
 
@@ -43,7 +42,6 @@ public class Sort {
             }
             k++;
         }
-
         while(i<first.length){
             mixed[k]= first[i];
             i++;
@@ -54,7 +52,6 @@ public class Sort {
             j++;
             k++;
         }
-
         return mixed;
     }
 }

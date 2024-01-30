@@ -150,7 +150,7 @@ public class Set1 {
             temp.remove(temp.size()-1);
         }
     }
-    
+
 
     public static void main(String[] args) {
         int[] arr ={10,2,5};
