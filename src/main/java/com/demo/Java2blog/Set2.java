@@ -229,5 +229,6 @@ public class Set2 {
             }
         }
         System.out.println(secMax);
+
     }
 }

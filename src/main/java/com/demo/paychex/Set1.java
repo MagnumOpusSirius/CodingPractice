@@ -35,6 +35,7 @@ public class Set1 {
 
     //Given a list of int and target val, return all list pair that add up to the target
     //{1,2,3,4,5,6} and target = 10;
+    //
     static List<List<Integer>> findPair(int[] arr, int target){
         List<List<Integer>> result= new ArrayList<>();
         Arrays.sort(arr);
