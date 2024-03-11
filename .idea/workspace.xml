@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13ca5b20-5e43-4570-9c5b-d8cb78874a8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/Delta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/Java2blog/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/Java2blog/B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/Java2blog/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/Java2blog/RunListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/Java2blog/Set4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/geekforgeek/LinkedNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/geekforgeek/Set1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/Java2blog/Set2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/Java2blog/Set2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/paychex/Set1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/paychex/Set1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/geekforgeek/LinkedNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/geekforgeek/LinkedNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/geekforgeek/Set1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/geekforgeek/Set1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
