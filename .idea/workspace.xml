@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13ca5b20-5e43-4570-9c5b-d8cb78874a8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/geekforgeek/PalindromeVerifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/demo/PalindromeVerifierTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/geekforgeek/LinkedNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/geekforgeek/LinkedNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/geekforgeek/Set1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/geekforgeek/Set1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,23 +35,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.language"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.demo.HackerRank" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PalindromeVerifierTest.isPalindrome_False">
     <configuration name="RunListNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.demo.Java2blog.RunListNode" />
       <module name="AllCoreJavaAnswers" />
@@ -64,8 +65,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PalindromeVerifierTest.isPalindrome_False" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AllCoreJavaAnswers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.demo.PalindromeVerifierTest" />
+      <option name="METHOD_NAME" value="isPalindrome_False" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PalindromeVerifierTest.isPalindrome_Simplify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AllCoreJavaAnswers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.demo.PalindromeVerifierTest" />
+      <option name="METHOD_NAME" value="isPalindrome_Simplify" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PalindromeVerifierTest.isPalindrome_True" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AllCoreJavaAnswers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.demo.PalindromeVerifierTest" />
+      <option name="METHOD_NAME" value="isPalindrome_True" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PalindromeVerifierTest.isPalindrome_False" />
+        <item itemvalue="JUnit.PalindromeVerifierTest.isPalindrome_True" />
+        <item itemvalue="JUnit.PalindromeVerifierTest.isPalindrome_Simplify" />
         <item itemvalue="Application.RunListNode" />
       </list>
     </recent_temporary>
