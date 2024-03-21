@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Leetcode290.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">LeetCode290Test Coverage Results</a> &gt; <a href="index.source.html" class="el_package">com.demo.leetcode</a> &gt; <span class="el_source">Leetcode290.java</span></div><h1>Leetcode290.java</h1><pre class="source lang-java linenums">package com.demo.leetcode;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+
+<span class="fc" id="L7">public class Leetcode290 {</span>
+    public boolean wordPattern(String pattern, String s) {
+        //for that character key associate that string word value
+<span class="fc" id="L10">        Map&lt;Character, String&gt; map= new HashMap&lt;&gt;();</span>
+        //split the s to word:
+<span class="fc" id="L12">        String[] split= s.split(&quot; &quot;);</span>
+<span class="pc bpc" id="L13" title="1 of 2 branches missed.">        if(pattern.length()!=split.length)return false;</span>
+        // System.out.println(Arrays.toString(split));
+<span class="fc bfc" id="L15" title="All 2 branches covered.">        for(int i=0; i&lt; pattern.length(); i++){</span>
+<span class="fc" id="L16">            char ch= pattern.charAt(i);</span>
+<span class="fc bfc" id="L17" title="All 4 branches covered.">            if(map.containsValue(split[i]) &amp;&amp; !map.containsKey(ch)){</span>
+                //if the value is already present and key is not present
+                //example: &quot;abba&quot;, &quot;dog dog dog dog&quot;
+<span class="fc" id="L20">                return false;</span>
+<span class="fc bfc" id="L21" title="All 4 branches covered.">            }if(map.containsKey(ch) &amp;&amp; !map.get(ch).equals(split[i])){</span>
+                //if the key is present and value is not equal to the value in map
+                //example: &quot;abba&quot;, &quot;dog cat cat fish&quot;
+<span class="fc" id="L24">                return false;</span>
+            }
+            else{
+<span class="fc" id="L27">                map.put(ch, split[i]);</span>
+            }
+        }
+
+<span class="fc" id="L31">        return true;</span>
+    }
+
+//    public static void main(String[] args) {
+//        Leetcode290 obj= new Leetcode290();
+//        System.out.println(obj.wordPattern(&quot;abba&quot;, &quot;dog cat cat dog&quot;));
+//    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

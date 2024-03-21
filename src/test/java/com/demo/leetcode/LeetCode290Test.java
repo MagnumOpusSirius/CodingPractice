@@ -29,4 +29,15 @@ public class LeetCode290Test {
         boolean result = obj.wordPattern(pattern, s);
         Assertions.assertFalse(result);
     }
+
+    @Test
+    void test3() {
+        //given
+        String pattern = "abba";
+        String s = "dog dog dog dog";
+        //when
+        Leetcode290 obj = new Leetcode290();
+        boolean result = obj.wordPattern(pattern, s);
+        Assertions.assertFalse(result);
+    }
 }
