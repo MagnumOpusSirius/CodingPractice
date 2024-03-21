@@ -37,57 +37,44 @@ Method signature: long count(int R, int C, int L, int N)
 (be sure your method is public)
  */
 public class Delta {
-    //rectangular dining room divided into grid of tiles, some of which are empty
-    //some contain pillars.
+
     public long count(int R, int C, int L, int N){
-
-        boolean[][] pillars= new boolean[R][C];
-
-        //mark the pillar positions on the grid:
-        for(int i=0; i< N; i++){
-            int pillarRow = (4 * i * i + 7 * i) % R;
-            int pillarCol = (i * i * i + 8 * i + 13) % C;
-            System.out.println("pillar row = "+ pillarRow+ " and pillar col = "+ pillarCol);
-            pillars[pillarRow][pillarCol]= true;
-            System.out.println(pillars[pillarRow][pillarCol]);
-        }
-
-
-        long result= 0;
-
-        //go through the all possible positions for the table:
-        for(int i=0; i< R; i++){
-            for(int j=0; j<C; j++){
-                boolean isValid= true;
-
-                //check if the table covers any pillars
-                //if it does set the isValid to be false:
-                for(int r = i; r<i+L; r++){
-                    for(int c =j; c<j+L; c++){
-                        //check if the current tile contains the pillar:
-                        if(r<R && c<C && pillars[r][c]){
-                            isValid= false;
-                            break;
-                        }
-                    }
-                    if(!isValid){
-                        break;
-                    }
-                }
-                //if placement is valid we increment the result;
-                if(isValid){
-                    result++;
+        long totalWays=0;
+        for(int i=0; i< R-L; i++){
+            for(int j=0; j< C-L; j++){
+                if(isValidPlacement(i, j, L, N, R, C)){
+                    totalWays++;
                 }
             }
         }
-        return result;
-
+        return totalWays;
     }
+
+    boolean isValidPlacement(int startRow, int startCol, int L, int N, int R, int C){
+        for(int i=0; i<N; i++){
+            int pillarRow = (4 * i * i + 7 * i) % R;
+            int pillarCol = (i * i * i + 8 * i + 13) % C;
+            System.out.println("pillarRow : "+ pillarRow + " and pillarCol : "+ pillarCol);
+            //check if the pillar is under the dining table:
+            //if it is then we return false
+            //else return true
+
+            //pillarRow>=startRow -> pillar at or below the table:
+            //pillarRow>=startRow -> pillar above the table
+            //pillarCol >= startCol -> pillar is to right or same position as table
+            //pillarCol < startCol + L -> pillar is left of table
+            if(pillarRow>=startRow && pillarRow < startRow +L && pillarCol >= startCol && pillarCol < startCol + L){
+                return false;
+            }
+        }
+        return true;
+    }
+
 
     public static void main(String[] args) {
         Delta delta= new Delta();
 
-        int R = 3, C = 3, L = 2, N = 3;
+        int R = 5, C = 5, L = 3, N = 2;
         long result= delta.count(R,C, L, N);
         System.out.println(result);
 
