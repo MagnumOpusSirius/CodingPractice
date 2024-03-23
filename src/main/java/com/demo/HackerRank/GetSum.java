@@ -1,5 +1,6 @@
 package com.demo.HackerRank;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class GetSum {
@@ -23,6 +24,11 @@ public class GetSum {
         }
         GetSum getSum= new GetSum();
         System.out.println(getSum.sum(ints));
+
+        int[][] matrix= {{1,2},{2,3}};
+        int[] result= Arrays.stream(matrix).flatMapToInt(Arrays::stream).sorted().toArray();
+
+        System.out.println(Arrays.toString(result));
 
     }
 }
