@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13ca5b20-5e43-4570-9c5b-d8cb78874a8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/leetcode/Leetcode340.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/takehometest/HighestScores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/takehometest/Records.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/takehometest/input_data_1.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/HackerRank/OnbeProblem2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/HackerRank/OnbeProblem2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/HackerRank/GetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/HackerRank/GetSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

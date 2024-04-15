@@ -1,4 +1,4 @@
-package com.demo.takehometest.record;
+package com.demo.takehometest;
 import org.json.JSONObject;
 public class Records {
     private int score;
